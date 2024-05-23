@@ -3,7 +3,9 @@ Module Program
         Console.WriteLine("Hello World!")
         Doforloop(22)
         Console.WriteLine($"Hello {Math.Sin(22)}")
-        Console.Beep(550, 1000)
+        If OperatingSystem.IsWindows Then
+            Console.Beep(550, 1000)
+        End If
     End Sub
     Sub Doforloop(endnum As Integer)
         Dim x As Integer
